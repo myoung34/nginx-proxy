@@ -15,7 +15,7 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf \
  && sed -i 's/worker_processes  1/worker_processes  auto/' /etc/nginx/nginx.conf
 
 # Install Forego
-ADD https://github.com/binfalse/forego/releases/download/v0.16.1-stripped-colors/forego /usr/local/bin/forego
+ADD https://github.com/binfalse/forego/releases/download/20190107-stripped-colors/forego /usr/local/bin/forego
 RUN chmod u+x /usr/local/bin/forego
 
 ENV DOCKER_GEN_VERSION 0.7.4
